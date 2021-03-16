@@ -148,7 +148,10 @@ namespace VitalsApp
             txtAge.Focus();
             txtAge.SelectAll();
         }
-
+        /// <summary>
+        /// Displays the application dashboard
+        /// </summary>
+        /// <param name="shouldDisplay"></param>
         private void DisplayDashboard(bool shouldDisplay)
         {
             if(shouldDisplay is true)
@@ -172,7 +175,9 @@ namespace VitalsApp
             }
 
         }
-
+        /// <summary>
+        /// Calculates the user's heart rate
+        /// </summary>
         private void CalcHeartRate()
         {
             // Declare the general Variables
@@ -216,7 +221,9 @@ namespace VitalsApp
                 lblHeartBeat1.Text = tenSecMinTarget.ToString("F0");
                 lblHeartBeat2.Text = tenSecMaxTarget.ToString("F0");
         }
-
+        /// <summary>
+        /// Calculates the user's BMI value
+        /// </summary>
         private void CalcBMI()
         {
             // Declare the variables
@@ -300,7 +307,9 @@ namespace VitalsApp
             }
 
         }
-
+        /// <summary>
+        /// Calculates the user's glucose level
+        /// </summary>
         private void CalcGlucose()
         {
             // Declare the variable
