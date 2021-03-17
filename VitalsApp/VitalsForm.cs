@@ -40,6 +40,7 @@ namespace VitalsApp
         {
             //Call the test data method
             LoadTestData();
+
             //Call the display dashboard method and make panels invisible
             DisplayDashboard(false);
 
@@ -57,6 +58,7 @@ namespace VitalsApp
             //this.WindowState = FormWindowState.Maximized; //maximize the screen if it's chopping off
         }
 
+        // Main Click Methods
         private void btnSubmitVitals_Click(object sender, EventArgs e)
         {
             // Validate inputs before running program
@@ -115,9 +117,10 @@ namespace VitalsApp
             DisplayDashboard(false);
         }
 
-        // Special feature click methods
+        // Special feature Click Methods
         private void btnAppointment_Click(object sender, EventArgs e)
         {
+            DisplayDashboard(false);
             AppointmentForm f = new AppointmentForm(); //create a new form instance
             f.Show(); //display the form
         }
@@ -128,10 +131,11 @@ namespace VitalsApp
             int currentHeight = this.Size.Height;
 
             int anyWidth = currentWidth + pnlScreenRight.Size.Width;
+
             this.Size = new Size(anyWidth, currentHeight);
         }
 
-        //start the rest of the methods below this line
+        //Processing Methods
 
         private void LoadTestData()
         {
@@ -442,7 +446,11 @@ namespace VitalsApp
 
             return diastolicLevel;
         }
-
+        /// <summary>
+        /// Sets the overall hypertension level
+        /// </summary>
+        /// <param name="sysLevelName">Systolic Blood Pressure Level</param>
+        /// <param name="diaLevelName">Diastolic Blood Pressure Level</param>
         private void SetOverallHypertensionLevel(string sysLevelName, string diaLevelName)
         {
             lblHyperStage2.ForeColor = Color.DimGray;
