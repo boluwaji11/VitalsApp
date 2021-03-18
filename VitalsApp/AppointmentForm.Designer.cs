@@ -73,6 +73,7 @@ namespace VitalsApp
             // 
             this.pnlServiceInfo.BackColor = System.Drawing.Color.DimGray;
             this.pnlServiceInfo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlServiceInfo.BackgroundImage")));
+            this.pnlServiceInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlServiceInfo.Controls.Add(this.pictureBox5);
             this.pnlServiceInfo.Controls.Add(this.pictureBox4);
             this.pnlServiceInfo.Controls.Add(this.pictureBox3);
