@@ -125,15 +125,32 @@ namespace VitalsApp
             f.Show(); //display the form
         }
 
-        private void btnRightScreen_Click(object sender, EventArgs e)
+        // Expand Screen
+        private void btnRightArrow_Click(object sender, EventArgs e)
         {
+            btnRightArrow.Visible = true;
             int currentWidth = this.Size.Width;
             int currentHeight = this.Size.Height;
 
             int anyWidth = currentWidth + pnlScreenRight.Size.Width;
 
             this.Size = new Size(anyWidth, currentHeight);
+            btnRightArrow.Visible = false;
         }
+
+        // Retract Screen
+        private void btnLeftArrow_Click(object sender, EventArgs e)
+        {
+            btnLeftArrow.Visible = true;
+            int currentWidth = this.Size.Width;
+            int currentHeight = this.Size.Height;
+
+            int anyWidth = currentWidth - pnlScreenRight.Size.Width;
+
+            this.Size = new Size(anyWidth, currentHeight);
+            btnRightArrow.Visible = true;
+        }
+
 
         //Processing Methods
 
@@ -702,6 +719,7 @@ namespace VitalsApp
 
             return shouldAlert;
         }
+
 
     }
 }
