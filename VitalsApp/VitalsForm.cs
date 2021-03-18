@@ -141,7 +141,6 @@ namespace VitalsApp
         // Retract Screen
         private void btnLeftArrow_Click(object sender, EventArgs e)
         {
-            btnLeftArrow.Visible = true;
             int currentWidth = this.Size.Width;
             int currentHeight = this.Size.Height;
 
