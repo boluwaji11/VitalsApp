@@ -140,8 +140,9 @@ namespace VitalsApp
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnAppointment = new System.Windows.Forms.Button();
-            this.btnRightScreen = new System.Windows.Forms.PictureBox();
+            this.btnRightArrow = new System.Windows.Forms.PictureBox();
             this.pnlScreenRight = new System.Windows.Forms.Panel();
+            this.btnLeftArrow = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picBmiOver)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBmiHealthy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBmiUnder)).BeginInit();
@@ -164,8 +165,9 @@ namespace VitalsApp
             this.pnlHeartRate2.SuspendLayout();
             this.pnlRightScreen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRightScreen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRightArrow)).BeginInit();
             this.pnlScreenRight.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLeftArrow)).BeginInit();
             this.SuspendLayout();
             // 
             // label5
@@ -1586,17 +1588,17 @@ namespace VitalsApp
             this.btnAppointment.UseVisualStyleBackColor = true;
             this.btnAppointment.Click += new System.EventHandler(this.btnAppointment_Click);
             // 
-            // btnRightScreen
+            // btnRightArrow
             // 
-            this.btnRightScreen.Image = ((System.Drawing.Image)(resources.GetObject("btnRightScreen.Image")));
-            this.btnRightScreen.Location = new System.Drawing.Point(1070, 29);
-            this.btnRightScreen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnRightScreen.Name = "btnRightScreen";
-            this.btnRightScreen.Size = new System.Drawing.Size(45, 46);
-            this.btnRightScreen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnRightScreen.TabIndex = 280;
-            this.btnRightScreen.TabStop = false;
-            this.btnRightScreen.Click += new System.EventHandler(this.btnRightScreen_Click);
+            this.btnRightArrow.Image = ((System.Drawing.Image)(resources.GetObject("btnRightArrow.Image")));
+            this.btnRightArrow.Location = new System.Drawing.Point(1070, 29);
+            this.btnRightArrow.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnRightArrow.Name = "btnRightArrow";
+            this.btnRightArrow.Size = new System.Drawing.Size(45, 46);
+            this.btnRightArrow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnRightArrow.TabIndex = 280;
+            this.btnRightArrow.TabStop = false;
+            this.btnRightArrow.Click += new System.EventHandler(this.btnRightArrow_Click);
             // 
             // pnlScreenRight
             // 
@@ -1606,6 +1608,17 @@ namespace VitalsApp
             this.pnlScreenRight.Size = new System.Drawing.Size(333, 905);
             this.pnlScreenRight.TabIndex = 281;
             // 
+            // btnLeftArrow
+            // 
+            this.btnLeftArrow.Image = ((System.Drawing.Image)(resources.GetObject("btnLeftArrow.Image")));
+            this.btnLeftArrow.Location = new System.Drawing.Point(1070, 29);
+            this.btnLeftArrow.Name = "btnLeftArrow";
+            this.btnLeftArrow.Size = new System.Drawing.Size(45, 46);
+            this.btnLeftArrow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnLeftArrow.TabIndex = 282;
+            this.btnLeftArrow.TabStop = false;
+            this.btnLeftArrow.Click += new System.EventHandler(this.btnLeftArrow_Click);
+            // 
             // VitalsForm
             // 
             this.AcceptButton = this.btnSubmitVitals;
@@ -1614,7 +1627,6 @@ namespace VitalsApp
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.ClientSize = new System.Drawing.Size(1460, 903);
             this.Controls.Add(this.pnlScreenRight);
-            this.Controls.Add(this.btnRightScreen);
             this.Controls.Add(this.lblFooter);
             this.Controls.Add(this.pnlHeartRate1);
             this.Controls.Add(this.picLine);
@@ -1625,6 +1637,8 @@ namespace VitalsApp
             this.Controls.Add(this.pnlGlucose);
             this.Controls.Add(this.picLoadTestData);
             this.Controls.Add(this.pnlHeartRate2);
+            this.Controls.Add(this.btnRightArrow);
+            this.Controls.Add(this.btnLeftArrow);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "VitalsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -1658,8 +1672,9 @@ namespace VitalsApp
             this.pnlHeartRate2.PerformLayout();
             this.pnlRightScreen.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRightScreen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRightArrow)).EndInit();
             this.pnlScreenRight.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnLeftArrow)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1775,10 +1790,11 @@ namespace VitalsApp
         private System.Windows.Forms.Label lblFooter;
         private System.Windows.Forms.Panel pnlRightScreen;
         private System.Windows.Forms.Button btnAppointment;
-        private System.Windows.Forms.PictureBox btnRightScreen;
+        private System.Windows.Forms.PictureBox btnRightArrow;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel pnlScreenRight;
+        private System.Windows.Forms.PictureBox btnLeftArrow;
     }
 }
 
